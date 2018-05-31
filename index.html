@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Fill in the blanks to write your story!</h1>
+      <div>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="enter-Name">Enter Name</label>
+            <input id="enter-Name" class="form-control" type="text">
+          </div>
+
+          <select class="form-control" id="food">
+            <option>Pizza</option>
+            <option>Hot dog</option>
+            <option>Tacos</option>
+            <option>Sushi</option>
+          </select>
+          <div class="radio">
+  <label>
+    <input type="radio" name="music" value="Rock" checked>
+    Rock
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="music" value="Rap">
+    Rap
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="music" value="country">
+    country
+  </label>
+</div>
+
+<div class="form-group">
+  <label for="born">Date of birth:</label>
+  <input id="born" class="form-control" type="date">
+</div>
+
+<div class="form-group">
+  <label for="color">What is your favorite color?</label>
+  <input id="color" class="form-control" type="color">
+</div>
+
+       <button type="submit" class="btn">submit</button>
+        </form>
+      </div>
+
+      <div id="story">
+        <h1>Your info</h1>
+        <p> Hello <span class="enter-Name"></span> (DOB: <span class="dob"></span>), your favorite food
+          is <span class="food"></span>. You also love <span class="music"></span> and your favorite
+            color is now the background</p>
+      </div>
+    </div>
+
+  </body>
